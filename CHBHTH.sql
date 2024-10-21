@@ -275,6 +275,3 @@ from ct_hoadon,hoadon
 where ct_hoadon.MaHoaDon = hoadon.MaHoaDon and Ngay between '09/06/2021' and '09/06/2021'
 */
 
-/*Ràng buộc ĐƠN HÀNG*/
-alter table Course
-add constraint FK_c_u foreign key(LecturerId) references AspNetUsers(Id);
