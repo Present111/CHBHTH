@@ -113,9 +113,14 @@ insert into NhaCungCap values (N'Thực phẩm miền nam');
 insert into NhaCungCap values (N'CTY CỔ PHẦN HUTECH');
 
 /*Sản phẩm*/
-insert into SanPham values (N'Dầu ăn trường an',18000,10,N'Dầu ăn trường an mát lòng mát dạ',3,3,N'\Images\DAUAN.jpg');
-insert into SanPham values (N'Rau dền',5000,10,N'Dập dền như diều gặp gió',2,2,N'\Images\DAUAN.jpg');
-insert into SanPham values (N'Sữa ánh sao',22000,10,N'Uống sáng như sao',1,1,N'\Images\DAUAN.jpg');
+INSERT INTO SanPham (MaSP, TenSP, GiaBan, Soluong, MoTa, MaLoai, MaNCC, AnhSP)
+VALUES 
+(1, 'Dầu ăn trường an', 18000, 10, 'Dầu ăn trường an mát lòng mát dạ', 3, 3, '\Images\DAUAN-1.jpg'),
+(2, 'Rau đen', 5000, 10, 'Đậm đen như điều gặp gió', 2, 2, '\Images\RAU-1.jpg'),
+(3, 'Sữa ảnh sao', 22000, 10, 'Uống sáng như sao', 1, 1, '\Images\SUA-1.png'),
+(4, 'Vinamilk', 22000, 10, 'Xương chắc khỏe', 1, 1, '\Images\SUA-2.jpg'),
+(5, 'Meizan', 30000, 20, 'Dầu thực vật cao cấp', 3, 3, '\Images\DAUAN-2.png');
+
 
 /*ĐƠN HÀNG*/
 insert into DonHang values ('2021-02-07',1,1,N'999 HUTECH',2,27000);
